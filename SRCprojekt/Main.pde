@@ -1,5 +1,5 @@
 class Main{
- int x, y, c;
+ float x, y, c;
   Main(){
   }
   
@@ -12,13 +12,13 @@ class Main{
       String lUpdate = r.getString("date");
      // println(lUpdate,cases);
       
-      x = (deaths / 100);
-      c = (cases / 2000);
+      x = (deaths / 1000);
+      c = (cases / 1000);
       y += 17;
       if(x > 2){
-      fill(255,0,0);
+      fill(255,255,0);
        rect(170, y, c, 10);
-      fill(0,255,0);
+      fill(255,0,0);
         rect(170, y, x, 10);  
        fill(0);
      
