@@ -23,7 +23,11 @@ class Main{
        fill(0);
      
       }else{
+        fill(255,255,0);
         rect(170,y,2,10);
+        fill(255,0,0);
+        rect(170,y,c,10);
+         fill(0);
       }
       textSize(15);
       text(state,0,y+8);
