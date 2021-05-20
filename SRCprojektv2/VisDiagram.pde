@@ -1,13 +1,13 @@
-class subFuck extends Main{
-  subFuck(String state_,int deaths_, int cases_, String lUpdate_){
- super(state_,deaths_,cases_,lUpdate_);
+class VisDiagram extends DataOPB{
+  VisDiagram(String state_,int deaths_, int cases_, String lUpdate_, int stateid_){
+ super(state_,deaths_,cases_,lUpdate_, stateid_);
 
   }
-  void bringData(){
-
-      x = (deaths / 1000);
-      c = (cases / 1000);
-      y += 17;
+  void TegnDiagram(){
+     
+     x = (deaths / 1000);
+     c = (cases / 1000);
+     y = id*17;
       if(x > 2){
       fill(255,255,0);
        rect(170, y, c, 10);
@@ -23,8 +23,8 @@ class subFuck extends Main{
         fill(0);
       }
       textSize(15);
+      
       text(state,0,y+8);
-     // text(cases + " Deaths, Cases", c+175, y+10);
-       
+     text(cases + " Deaths, Cases", c+175, y+10);
   }
 }
