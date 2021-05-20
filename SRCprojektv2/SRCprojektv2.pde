@@ -4,7 +4,7 @@ int stateid = 1;
 
 
 void setup(){
-size(1800,1000);
+size(1800,950);
 table = loadTable("https://raw.githubusercontent.com/nytimes/covid-19-data/master/live/us-states.csv","header");
 
  fill(0);
