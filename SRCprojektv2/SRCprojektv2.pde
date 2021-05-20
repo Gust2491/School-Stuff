@@ -2,6 +2,7 @@ Table table;
 ArrayList<DataOPB> altData = new ArrayList<DataOPB>();
 int stateid = 1;
 
+InfoPanel Infos = new InfoPanel("Deaths","Cases", 255,255,0,255,0,0);
 
 void setup(){
 size(1800,950);
@@ -24,4 +25,5 @@ void draw(){
    for(DataOPB x:altData){
     x.TegnDiagram();
   }
+  Infos.display();
  }
